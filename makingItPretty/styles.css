@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Joan&family=Kdam+Thmor+Pro&family=League+Gothic&family=Raleway&family=Roboto+Slab&family=Shadows+Into+Light&display=swap');
+
+a{
+    color: rgb(0, 31, 133);
+}
+
+a:hover{
+    color: blue;
+}
+
+body {
+    background-color: rgb(161, 225, 255);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "navigation navigation"
+        "head head"
+        "Intro Intro"
+        "fOne fTwo"
+        "fThree fThree"
+    }
+
+.resumePage {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "navigation navigation"
+        "head head"
+        "listFact listFact"
+        "work work"
+        "vidDes vidDes"
+        "vidone vidtwo"
+        "social social"
+        "twitch twitter"
+}
+
+.webAppPage{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "navigation navigation"
+        "head head"
+        "brawl pepsi"
+        "board gamecube"
+        "instrument ai"
+}
+
+.othersamples {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "navigation"
+        "head"
+        "number"
+        "game"
+        "fbird"
+
+}
+
+nav {
+    font-family: "Kdam Thmor Pro", Arial, Helvetica, sans-serif;
+    grid-area: navigation;
+    justify-self: center;
+    text-align: center;
+    
+}
+
+header{
+    font-family: "League Gothic", Arial, Helvetica, sans-serif;
+    grid-area: head;
+    padding-bottom: 7px;
+    justify-self: center;
+    font-size: 1.9rem;
+}
+
+
+.Introduction {
+    font-family: "Kdam Thmor Pro", Arial, Helvetica, sans-serif;
+    grid-area: Intro;
+    justify-self: center;
+    text-align: center;
+}
+
+.FactOne {
+    border-radius: 20px;
+    border: dotted blue;
+    background-color: rgb(219, 225, 255);
+    font-family: "Kdam Thmor Pro", Arial, Helvetica, sans-serif;
+    grid-area: fOne;
+    justify-self: right;
+    text-align: center;
+    padding: 7px;
+}
+
+.FactTwo{
+    border-radius: 20px;
+    border: dotted red;
+    background-color: rgb(255, 135, 135);
+    font-family: "Kdam Thmor Pro", Arial, Helvetica, sans-serif;
+    grid-area: fTwo;
+    justify-self: left;
+    text-align: center;
+    padding: 7px;
+}
+
+.FactThree {
+    border-radius: 20px;
+    border: dotted purple;
+    background-color: rgb(246, 179, 255);
+    font-family: "Kdam Thmor Pro", Arial, Helvetica, sans-serif;
+    grid-area: fThree;
+    justify-self: center;
+    text-align: center;
+    padding: 7px;
+}
+
+.Smash {
+    color: aqua;
+}
+
+.Smash :hover{
+    color: blue;
+}
+
+.listFacts {
+    font-family: "Kdam Thmor Pro", Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    border: solid black;
+    background-color: rgb(36, 27, 27);
+    text-align: center;
+    justify-self: center;
+    grid-area: listFact;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 70%;
+}
+
+.vidOne {
+    grid-area: vidone;
+    justify-self: right;
+    margin-top: 40 px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+
+}
+
+.vidTwo {
+    grid-area: vidtwo;
+    justify-self: left;
+    margin-top: 40 px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+
+}
+
+.twitter {
+    grid-area: twitter;
+    justify-self: left;
+    align-self: center;
+    padding-left: 10px;
+}
+
+.twitch {
+    grid-area: twitch;
+    justify-self: right;
+    align-self: center;
+    padding-right: 10px;
+}
+
+.fa-x-twitter{
+    font-size: 6rem;
+    border: solid black;
+    background-color: azure;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.fa-twitch{
+    font-size: 6rem;
+    border: solid black;
+    background-color: azure;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.socials {
+    grid-area: social;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-family: "Kdam Thmor Pro", Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+    border: dotted black;
+    background-color: azure;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.vidDesc {
+    grid-area: vidDes;
+    justify-self: center;
+    text-align: center;
+    font-family: "Kdam Thmor Pro", Arial, Helvetica, sans-serif;
+    border: dotted black;
+    background-color: azure;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.workExp {
+    width: 70%;
+    grid-area: work;
+    justify-self: center;
+    text-align: center;
+    font-family: "Kdam thmor Pro", Arial, Helvetica, sans-serif;
+    border: 2px solid;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    border: solid black;
+    background-color: rgb(36, 27, 27);
+}
+
+iframe {
+    border: solid black;
+    border-radius: 10px;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+figcaption {
+    text-align: center;
+    font-family: "Kdam thmor Pro", Arial, Helvetica, sans-serif;
+}
+
+.brawler {
+    grid-area: brawl;
+    background-color: white;
+    padding: 20px;
+    border: 2px black solid;
+    border-radius: 20px;
+}
+
+.pMan {
+    grid-area: pepsi;
+    background-color: white;
+    padding: 20px;
+    border: 2px black solid;
+    border-radius: 20px;
+}
+
+.kboard {
+    grid-area: board;
+    background-color: white;
+    padding: 20px;
+    border: 2px black solid;
+    border-radius: 20px;
+}
+
+.control {
+    grid-area: gamecube;
+    background-color: white;
+    padding: 20px;
+    border: 2px black solid;
+    border-radius: 20px;
+}
+
+.gtar{
+    grid-area: instrument;
+    background-color: white;
+    padding: 20px;
+    border: 2px black solid;
+    border-radius: 20px;
+}
+
+.uhoh {
+    grid-area: ai;
+    background-color: white;
+    padding: 20px;
+    border: 2px black solid;
+    border-radius: 20px;
+}
+.randomNumber {
+    grid-area: number;
+
+}
+
+.shotputgame {
+    grid-area: game;
+
+}
+
+.flappybird {
+    grid-area: fbird;
+
+}
+
+.othersamples div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Kdam thmor Pro", Arial, Helvetica, sans-serif;
+    border: 2px black solid;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: white;
+    padding: 10px;
+}
+
+.othersamples div img {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .resumePage {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "navigation"
+            "head"
+            "listFact"
+            "work"
+            "vidDes"
+            "vidone"
+            "vidtwo"
+            "social"
+            "twitch"
+            "twitter"
+    }
+
+    .vidOne {
+        grid-area: vidone;
+        justify-self: center;
+        margin-top: 40 px;
+        margin-bottom: 40px;
+        margin-right: 0px;
+    
+    }
+    
+    .vidTwo {
+        grid-area: vidtwo;
+        justify-self: center;
+        margin-top: 40 px;
+        margin-bottom: 40px;
+        margin-left: 0px;
+    
+    }
+
+    .twitter {
+        grid-area: twitter;
+        justify-self: center;
+        align-self: center;
+        padding-left: 0px;
+    }
+    
+    .twitch {
+        grid-area: twitch;
+        justify-self: center;
+        align-self: center;
+        padding-right: 0px;
+    }
+
+    .webAppPage{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "navigation"
+            "head"
+            "brawl"
+            "pepsi"
+            "board"
+            "gamecube"
+            "instrument"
+            "ai"
+    }
+    
+}
+
+
+@media screen and (max-width: 800px) {
+    body {
+        justify-self: center;
+        background-color: rgb(161, 225, 255);
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "navigation"
+            "head"
+            "Intro"
+            "fOne"
+            "fTwo"
+            "fThree"
+        }
+
+    .FactOne {
+        justify-self: center;
+    }
+
+    .FactTwo{
+        justify-self: center;
+    }
+
+    .FactThree{
+        justify-self: center;
+    }
+    
+    .resumePage {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "navigation"
+            "head"
+            "listFact"
+            "work"
+            "vidDes"
+            "vidone"
+            "vidtwo"
+            "social"
+            "twitch"
+            "twitter"
+    }
+    
+    .othersamples {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "navigation"
+            "head"
+            "number"
+            "game"
+            "fbird"
+    
+    }
+}
